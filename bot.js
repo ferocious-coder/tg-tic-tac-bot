@@ -1,4 +1,6 @@
+const fs = require("fs");
 require("dotenv").config();
+
 const TelegramBot = require("node-telegram-bot-api");
 
 // ✅ secure way (reads from .env)
@@ -378,3 +380,4 @@ Type *any play command* to begin!
   `;
   bot.sendMessage(chatId, intro, { parse_mode: "Markdown" });
 });
+
